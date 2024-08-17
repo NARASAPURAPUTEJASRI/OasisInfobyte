@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+
+        }
+        section{
+            min-height: 100vh;
+            background-image:linear-gradient(rgba(129, 209, 221, 0.6),rgba(212, 126, 188, 0.804));
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container{
+            width: 85%;
+            margin: auto;
+        }
+        nav{
+            height: 80px;
+        }
+        nav ul{
+            float: right;
+            line-height: 80px;
+        }
+        nav ul li{
+            display: inline-block;
+            list-style: none;
+            padding: 0px 5px;
+        }
+        nav ul li a{
+            color: #f8f5f8;
+            text-decoration: none;
+            text-transform: uppercase;
+            border-radius: 5px;
+            padding: 7px 8px;
+            font-size: 19px;
+        }
+        nav ul li a:hover,
+        .nav ul li a.active {
+          background-color: #4399fa;
+          transition: 0.5s ease;
+
+        }
+
+        
+        .article{
+            width: 50%;
+            margin:auto;
+            text-align:center;
+            transform: translateY(25vh);
+        }
+        .article h1{
+           font-size: 46px;
+           color: #fff;
+           letter-spacing: 1.5px;
+           font-weight: 800;
+           margin-bottom: 25px;
+        }
+        .article .btn{
+         color: #fff;
+         padding: 12px 25px;
+         letter-spacing: 1.5px;
+         text-transform: uppercase;
+         text-decoration: none;
+         background-color: #f15048;
+        }
+        .article .btn:hover{
+            background-color: #4399fa;
+            transition: 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="" class="active">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+             <div class="article">
+                <h1>To Create the best Templates using HTML and CSS</h1>
+                <a href="" class="btn">Download Now</a>
+             </div>
+        </div>
+    </section>
+</body>
+</html>

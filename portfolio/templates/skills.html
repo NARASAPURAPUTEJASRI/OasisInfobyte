@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skills page</title>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="/contactme">Contact Me</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/skills" class="active">Skills</a></li>
+            <li><a href="/aboutme">About Me</a></li>
+            <li><a href="">Home</a></li>
+        </ul>
+    </div>
+    <div style="clear: both;"></div>
+    <div class="content">
+        <h1>Web Development</h1>
+        <h4>HTML/CSS</h4>
+        <div class="skillsbar">
+            <div class="skillsbar-inner htmlcss"></div>
+        </div>
+        <h4> MERN Stack</h4>
+        <div class="skillsbar">
+            <div class="skillsbar-inner mern"></div>
+        </div>
+        <h1>Programming Languages</h1>
+        <h4>Python</h4>
+        <div class="skillsbar">
+            <div class="skillsbar-inner python"></div>
+        </div>
+        <h4>JavaScript</h4>
+        <div class="skillsbar">
+            <div class="skillsbar-inner javascript"></div>
+        </div>
+        <h1>Tools & Technologies</h1>
+        <h4>Excel</h4>
+        <div class="skillsbar">
+            <div class="skillsbar-inner excel"></div>
+        </div>
+        <h4>Git Basics</h4>
+        <div class="skillsbar">
+            <div class="skillsbar-inner git"></div>
+        </div>
+    </div>
+    <div style="clear: both;"></div>
+    <div class="bar">
+
+    </div>
+    <style>
+        body{
+            background-color: black;
+            margin: 0;
+        }
+
+        .navbar ul li {
+           float: right;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 28px;
+            display: flex;
+            padding: 15px;
+        }
+        .navbar ul li a.active, .navbar ul li a:hover{
+            color: aqua;
+        }
+        .content h1{
+            color: aqua;
+            font-size: 45px;
+            margin-left: 55px;
+
+        }
+        .content h4{
+            color: white;
+            font-size: 25px;
+            margin-left: 55px;
+        }
+        .skillsbar{
+            margin-left: 55px;
+            
+            width: 40%;
+            background-color: #333;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .skillsbar-inner{
+             height: 20px;
+             text-align: right;
+             padding-right: 10px;
+             color: white;
+             line-height: 20px;
+             background-color: aqua;
+             border-radius: 5px;
+        }
+        .htmlcss{width: 70%;}
+        .mern{width: 60%;}
+        .python{width: 75%;}
+        .javascript{width: 55%;}
+        .excel{width: 40%;} 
+        .git{width: 45%;}
+    </style>
+</body>
+</html>

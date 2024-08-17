@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weatherApp</title>
+    <style>
+     body{
+    background-color: white;
+    font-family:  Arial, sans-serif;
+    text-align: center;
+    background-image: url("{{url_for('static', filename='weather.png') }}");
+    background-size: cover;
+    }
+    h1{
+    font-size: 32px;
+    color: #333;
+     }
+    .container {
+    position: relative;
+    max-width: 400px;
+    margin: 5% auto;
+    padding: 20px;
+    background-image:linear-gradient(rgba(129, 209, 221, 0.6),rgba(212, 126, 188, 0.804));
+    }
+    .logo{
+    padding: 10px;
+    height: 150px;
+    width: 150px;
+    }
+    input[type="number"]{
+    display: block;
+    position: relative;
+    padding: 10px;
+    margin: 0 auto;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    background-color: #fff;
+    color: #333;
+    }
+    button{
+    height: 50px;
+    width: 250px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: #090808;
+    color: #fff;
+    cursor: pointer;
+    }
+    button:hover {
+    background-color: #555;
+    }
+    #result {
+    margin-top: 50px;
+    font-size: 36px;
+    color:#fdfafa
+    }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        <hr>
+        <img class="logo" src="{{url_for('static', filename='logo.png') }}" alt="Logo">
+        <br><br>
+        <input type="number" id="temp" placeholder="Enter Temperature">
+        <br><br>
+        <button onclick="convertToFahrenheit()">Convert to Fahrenheit</button>
+        <br><br>
+        <button onclick="convertToCelsius()">convert to Celsius</button>
+    
+        <div id="result"></div>
+        <script>
+        function convertToFahrenheit(){
+            var celsius = parseFloat(document.getElementById("temp").value);
+            var fahrenheit = (celsius * 9/5) + 32;
+            document.getElementById("result").innerHTML = fahrenheit +"°F";
+        }
+        function convertToCelsius(){
+            var fahrenheit = parseFloat(document.getElementById("temp").value);
+            var celsius = (fahrenheit - 32) *5/9;
+            document.getElementById("result").innerHTML = celsius + "°C";
+        }
+       </script>
+</div>
+    
+</body>
+</html>
